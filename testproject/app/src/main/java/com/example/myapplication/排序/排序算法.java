@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /***
- *       冒泡////快速///插入
+ *       冒泡////选择///插入
  * @Author: Zhou xiaoyu
  * @CreateDate: 2019/8/14 0014
  *
@@ -24,7 +24,7 @@ public class 排序算法 {
         list.add(9);
 //        print(list);
 //        print("冒泡排序结果", 冒泡(list));
-//        print("快速排序结果", 快速(list));
+//        print("选择排序结果", 选择(list));
         print("插入排序结果", 插入(list));
 
     }
@@ -52,7 +52,7 @@ public class 排序算法 {
     /**
      *  冒泡排序的改进版
      *
-     * 简单快速排序  (每次循环剩下的元素找出一个最小(大)值放在每次循环的初始位置)
+     * 选择排序  (每次循环剩下的元素找出一个最小(大)值放在每次循环的初始位置)
      *
      * 找出最大(最小)元素与第一个元素交换
      * 循环
@@ -60,7 +60,7 @@ public class 排序算法 {
      * @param list
      * @return
      */
-    private static List<Integer> 快速(List<Integer> list) {
+    private static List<Integer> 选择(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             int minindex = i; //记录最小下标位置
             for (int j = i; j < list.size(); j++) {  //找到剩余元素的最小值(从i开始)
